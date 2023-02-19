@@ -1,0 +1,51 @@
+/* GRID SEARCH */
+.results > div {
+  background-color: var(--maincolor);
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l";
+}
+.item_0 {
+  grid-area: a;
+}
+.item_1 {
+  grid-area: b;
+}
+.item_2 {
+  grid-area: c;
+}
+.item_3 {
+  grid-area: d;
+}
+.item_4 {
+  grid-area: e;
+}
+.item_5 {
+  grid-area: f;
+}
+.item_6 {
+  grid-area: g;
+}
+.item_7 {
+  grid-area: h;
+}
+.item_8 {
+  grid-area: i;
+}
+.item_9 {
+  grid-area: j;
+}
+.item_10 {
+  grid-area: k;
+}
+.item_11 {
+  grid-area: l;
+}

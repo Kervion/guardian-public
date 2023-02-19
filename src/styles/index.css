@@ -1,0 +1,114 @@
+:root {
+  --maincolor: rgb(16, 58, 82);
+  --mainmedium: rgb(37, 93, 126);
+  --mainlight: rgb(110, 161, 192);
+}
+
+/* GENERAL */
+a {
+  text-decoration: none;
+  color: var(--mainlight);
+}
+* {
+  box-sizing: border-box;
+}
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: white;
+  z-index: 9;
+  padding: 600px;
+  opacity: 0.9;
+}
+body {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mainmedium);
+}
+
+/* IMAGES */
+.imgWrapper {
+  background-color: black;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+  position: relative;
+}
+.thumb {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 0px;
+}
+
+/* HOME STRUCTURE */
+.home_topline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.container {
+  margin: auto;
+  margin-top: 70px;
+  padding: 20px;
+  max-width: 1200px;
+}
+.wrapper > div,
+.sections > div {
+  background-color: var(--maincolor);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    "a a a a a a b b b c c c"
+    "a a a a a a b b b c c c"
+    "a a a a a a d d d e e e"
+    "f f f f g g g g h h h h"
+    "f f f f g g g g h h h h";
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+.item3 {
+  grid-area: c;
+}
+.item4 {
+  grid-area: d;
+}
+.item5 {
+  grid-area: e;
+}
+.item6 {
+  grid-area: f;
+}
+.item7 {
+  grid-area: g;
+}
+.item8 {
+  grid-area: h;
+}
+
+/* SECTIONS */
+.section_title {
+  margin-top: 40px;
+}
+.sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  grid-template-areas: "a b c";
+}
